@@ -94,7 +94,7 @@ function init() {
   console.log(global.currentPath);
 }
 
-document.getElementById('logo').addEventListener( (e) => {
+document.getElementById('logo').addEventListener( 'click', (e) => {
   popularMovie();
 });
 
