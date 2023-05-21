@@ -11,9 +11,12 @@ const popularMovie = () => {
     .then(response => response.json())
     .then(response => displayMovies(response))
     .catch(err => console.error(err));
+  
+  console.log('hello_popularMovie')
 }
 
 const displayMovies = (movies) => {
+  console.log('hello_displaymovie');
   console.log(movies.results);
   movies.results.forEach( m => {
     console.log(m.title);
